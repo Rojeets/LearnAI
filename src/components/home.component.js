@@ -1,18 +1,19 @@
 import React, { Component } from "react";
+import "../css/Styles.css";
 
 export default class Home extends Component {
     render() {
         return (
-            <>
+            <div className="uni">
                 <section class="hero">
                     <h2>Learn Smarter with Personalized Learning Paths</h2>
                     <p>AI-driven courses tailored to your skills, pace, and preferences.</p>
-                    <a href="login" class="cta-button">Get Started</a>
+                    <a href="login" class="get-button">Get Started</a>
                 </section>
 
                 <section class="featured-courses">
                     <h3>Featured Courses</h3>
-                    <div class="course-list">
+                    <div class="course-list1">
                         <div class="course">
                             <h4>Web Development</h4>
                             <p>Learn how to build responsive websites from scratch.</p>
@@ -45,7 +46,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </section>
-            </>
+            </div>
 
         );
     }

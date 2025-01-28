@@ -1,5 +1,9 @@
 /* General Reset */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Header */
 header {
@@ -48,7 +52,7 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
-.cta-button {
+.get-button {
   background-color: #ff4500;
   padding: 10px 20px;
   color: white;
@@ -57,7 +61,7 @@ header nav ul li a {
   border-radius: 5px;
 }
 
-.cta-button:hover {
+.get-button:hover {
   background-color: #e03e00;
 }
 
@@ -73,7 +77,7 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
-.course-list {
+.course-list1 {
   display: flex;
   justify-content: center;
   gap: 20px;
