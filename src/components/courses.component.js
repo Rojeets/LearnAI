@@ -2,13 +2,16 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../css/courses.css";
 
+import courses from "../files/course.json";
+
+
 export default class Course extends Component {
     render() {
         return (
             <main class="catalog-content">
 
                 <section class="search-bar">
-                    <input type="text" placeholder="Search for courses..." id="searchInput" oninput="searchCourses()" />
+                    <input type="text" placeholder="Search for courses..." id="searchInput" oninput="{searchCourses()}" />
                 </section>
 
                 <section class="categories">
@@ -24,7 +27,65 @@ export default class Course extends Component {
 
                 <section class="course-list">
                     <h2>Featured Courses</h2>
-                    <div className="course-carsole">
+                    <div className="course-carsole" id="coursesList">
+                        {
+                            courses.map((course, index) =>
+                                <div class="course-card">
+                                    <img src={require(`../images/${course.image}`)} alt={course.name} />
+                                    <div class="course-info">
+                                        <h3>{course.name}</h3>
+                                    </div>
+                                    <div class="course-price">
+                                        <p>Instructor: Elearing</p>
+                                        <p>Rating: ★★★★☆</p>
+                                        <div className="buttons">
+                                            <Link to="/login"><button class="cta-button">Enroll Now</button></Link>
+                                            <Link to="/course"><button class="cta-button">View Course</button></Link>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            )
+                        }
+
+
+                        {/* <div class="course-card">
+                            <img src="course-image1.jpg" alt="Course Image" />
+                            <div class="course-info">
+                                <h3>Web Development Bootcamp</h3>
+                                <p>Instructor: Elearing</p>
+                                <p>Rating: ★★★★☆</p>
+                                <Link to="/login"><button class="cta-button">Enroll Now</button></Link>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="course-image1.jpg" alt="Course Image" />
+                            <div class="course-info">
+                                <h3>Web Development Bootcamp</h3>
+                                <p>Instructor: Elearing</p>
+                                <p>Rating: ★★★★☆</p>
+                                <Link to="/login"><button class="cta-button">Enroll Now</button></Link>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="course-image1.jpg" alt="Course Image" />
+                            <div class="course-info">
+                                <h3>Web Development Bootcamp</h3>
+                                <p>Instructor: Elearing</p>
+                                <p>Rating: ★★★★☆</p>
+                                <Link to="/login"><button class="cta-button">Enroll Now</button></Link>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <img src="course-image1.jpg" alt="Course Image" />
+                            <div class="course-info">
+                                <h3>Web Development Bootcamp</h3>
+                                <p>Instructor: Elearing</p>
+                                <p>Rating: ★★★★☆</p>
+                                <Link to="/login"><button class="cta-button">Enroll Now</button></Link>
+                            </div>
+                        </div>
                         <div class="course-card">
                             <img src="course-image1.jpg" alt="Course Image" />
                             <div class="course-info">
@@ -60,7 +121,7 @@ export default class Course extends Component {
                                 <p>Rating: ★★★☆☆</p>
                                 <Link to="/login"><button class="cta-button">Enroll Now</button></Link>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 

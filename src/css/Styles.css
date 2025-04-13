@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Header */
@@ -90,6 +92,8 @@ header nav ul li a {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  cursor: pointer;
+
 }
 
 .course:hover{
@@ -106,9 +110,18 @@ header nav ul li a {
   font-size: 16px;
 }
 
+.cta-button1{
+  background-color: #1f80ee;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 /* How It Works Section */
 .how-it-works {
-  padding: 40px 20px;
+  padding: 40px 40px;
   text-align: center;
 }
 
@@ -121,6 +134,8 @@ header nav ul li a {
   display: flex;
   justify-content: center;
   gap: 40px;
+  cursor: pointer;
+
 }
 
 .step {
@@ -140,14 +155,15 @@ header nav ul li a {
   font-size: 16px;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  margin-top: 20px;
+.course-images{
+  position: relative;
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
 }
+
+/* Footer */
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
