@@ -11,7 +11,7 @@ function Navbar() {
                 <nav>
                     <ul>
                         <li className="navbar-item">
-                            <Link to="/mern" className="nav-link">Home</Link>
+                            <Link to="/LearnAI" className="nav-link">Home</Link>
                         </li>
                         <li className="navbar-item">
                             <Link to="/courses" className="nav-link">Courses</Link>

@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/mern" element={<Home />} /> {/* Make sure ExerciseList is rendered here */}
+        <Route path="/LearnAI" element={<Home />} /> {/* Make sure ExerciseList is rendered here */}
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Course />} />
         <Route path="/login" element={<Login />} />
