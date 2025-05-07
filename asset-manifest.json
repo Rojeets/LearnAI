@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/LearnAI/static/css/main.31652f71.css",
+    "main.js": "/LearnAI/static/js/main.6f2af3c4.js",
+    "static/media/profile.png": "/LearnAI/static/media/profile.8b3b6db751b37adb1de3.png",
+    "static/media/ML.jpeg": "/LearnAI/static/media/ML.1f6bbd433c6ae516c6cd.jpeg",
+    "static/media/DM.jpeg": "/LearnAI/static/media/DM.11fc52b263dfb7b29601.jpeg",
+    "static/media/blockchain.jpeg": "/LearnAI/static/media/blockchain.d956123f1624f0f3c997.jpeg",
+    "static/media/devops.jpeg": "/LearnAI/static/media/devops.34148000e0162a034d3c.jpeg",
+    "index.html": "/LearnAI/index.html",
+    "main.31652f71.css.map": "/LearnAI/static/css/main.31652f71.css.map",
+    "main.6f2af3c4.js.map": "/LearnAI/static/js/main.6f2af3c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31652f71.css",
+    "static/js/main.6f2af3c4.js"
+  ]
+}
